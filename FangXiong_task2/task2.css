@@ -1,0 +1,1009 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 微软雅黑;
+}
+
+/*
+头部样式
+*/
+#header {
+    height: 89px;
+    width: 950px;
+    margin: 0 auto;
+}
+
+#header .logo {
+    position: relative;
+    float: left;
+    top: 30px;
+}
+
+#header input {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 5px;
+    height: 30px;
+    width: 265px;
+    top:31px;
+    line-height: 38px;
+    border: 1px solid #c3c3c3;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #c3c3c3;
+    background: url(/images/header/icon_search.png);
+    background-position: right;
+    background: no-repeat;
+}
+
+#header .button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: -66px;
+    top: 40px;
+    background: url(/images/header/icon_search.png);
+    border: none;
+}
+
+#header ul {
+    position: relative;
+    float: right;
+    list-style: none;
+    top: -35px;
+}
+
+#header li {
+    position: relative;
+    top:39px;
+    display: inline;
+}
+
+#header li a:hover {
+    background: none;
+}
+
+#header .music,
+#header .group {
+    margin-right: 16px;
+}
+#header .movie {
+    margin-right: 17px;
+}
+
+#header .book,
+#header .location {
+    margin-right: 15px;
+}
+
+#header .fm {
+    margin-right: 22px;
+}
+
+#header .time {
+    margin-right:18px;
+}
+
+/*
+登录部分样式
+*/
+#login {
+    height: 305px;
+    background: url(/images/login/background.png) no-repeat;
+    background-position: center center;
+    margin-bottom: 22px;
+}
+
+#login .login_block {
+    position: relative;
+    margin: 10px 10px;
+    float: right;
+    width: 280px;
+}
+
+#login .login_block ul {
+    position: relative;
+    float: right;
+}
+
+#login .login_block li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 140px;
+    border-bottom: 1px solid #494949;
+    text-align: center;
+}
+
+#login .login_block li a {
+    font-size: 14px;
+}
+
+#login .download_block {
+    position: relative;
+    top:95px;
+    float: right;
+    width: 170px;
+}
+
+#login .download_block button {
+    position: relative;
+    color: #ffffff;
+    background: #00b51d;
+    width: 132px;
+    height: 33px;
+    border: none;
+    border-radius: 2px;
+    top: 15px;
+}
+
+#login .download_block img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:25px;
+    border: 1px solid #00b51d;
+}
+
+#login .login_block img {
+    float: right;
+}
+
+
+
+/*
+热点内容部分
+*/
+#hotContent {
+    clear: both;
+    overflow: hidden;
+}
+
+#hotContent .content {
+    width: 950px;
+    margin: 40px auto;
+}
+
+#hotContent .left {
+    width: 350px;
+    margin-right: 30px;
+}
+
+#hotContent .left .heading {
+    width: 950px;
+}
+
+#hotContent .block_nomargin,
+#hotContent .block {
+    float: left;
+    width: 170px;
+    height: fit-content;
+}
+
+#hotContent .block{
+    margin-right: 10px;
+}
+
+
+#hotContent .left,
+#hotContent .center,
+#hotContent .right {
+    float: left;
+}
+
+#hotContent img {
+    height: 170px;
+    width: 170px;
+    vertical-align: top;
+}
+
+#hotContent .center {
+    float: left;
+    width: 275px;
+    margin-right: 35px;
+}
+
+#hotContent .right {
+    float: right;
+    width: 260px;
+}
+
+#hotContent .left p {
+    font-size: 2px;
+    color: #999999;
+}
+
+#hotContent .center p {
+    font-size: 2px;
+    color: #666666;
+}
+
+#hotContent .right p {
+    font-size: 2px;
+    color: #aaaaaa;
+}
+
+#hotContent a {
+    font-size: 2px;
+    color: #3377aa;
+}
+
+#hotContent a:hover {
+    color: #ffffff;
+    background: #3377aa;
+}
+
+
+
+/*
+豆瓣时间
+*/
+#time {
+    clear: both;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+#time .content {
+    width: 950px;
+    margin: 40px auto;
+}
+
+#time .title {
+    width: 100px;
+    float: left;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+#time .heading {
+    float: left;
+}
+
+#time .time_list {
+    float: left;
+    margin-left: 120px;
+}
+
+#time .time_list_row_1,
+#time .time_list_row_2 {
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#time img {
+    height: 140px;
+    width: 100px;
+    vertical-align: top;
+}
+
+#time .block {
+    float: left;
+    width: 100px;
+    margin-right: 64px;
+    height: fit-content;
+}
+
+#time .block p,
+#time .block a {
+    width: 100px;
+    line-height: 25px;
+    text-align: center;
+}
+
+ 
+#time .block a {
+    color: #333333;
+}
+
+#time .block a:hover {
+    color: #ffffff;
+    background: #3377aa;
+}
+
+/*
+视频
+*/
+#video .content {
+    width: 950px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+#video .video_list {
+    overflow: hidden;
+}
+
+#video .video_list img {
+    width: 250px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#video .video_list_row_2,
+#video .video_list_row_1 {
+    clear: both;
+    height: fit-content;
+    overflow: hidden;
+}
+
+#video .video_list_row_1 {
+    margin-bottom: 15px;
+}
+
+#video .block {
+    float: left;
+    width: 250px;
+    margin-right: 35px;
+}
+
+#video .block_nomargin {
+    float: left;
+    width: 250px;
+}
+
+#video .heading a {
+    color: #007722;
+}
+
+#video .heading a:hover {
+    color: #007722;
+    background: none;
+}
+
+#video .block_nomargin a:hover,
+#video .block a:hover {
+    background: #3377aa;
+    color: #ffffff;
+}
+
+#video .heading {
+    margin-bottom: 15px;
+}
+
+/*
+电影
+*/
+#book,
+#movie {
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+#book .content li img,
+#movie .content li img {
+    vertical-align: top;
+    position: relative;
+    top: 6px;
+}
+
+#book .center,
+#movie .center {
+    width: 536px;
+    overflow: hidden;
+    float: left;
+}
+
+#book .center .heading {
+    width: 536px;
+    margin-bottom: 20px;
+}
+
+#book .center img,
+#movie .center img {
+    height: 140px;
+    width: 100px;
+    margin: 0px 17px;
+}
+
+#book .center .block,
+#movie .center .block {
+    float: left;
+    width: 134px;
+    margin-bottom: 40px;
+}
+
+#book .center .block .book_name,
+#movie .center .block .movie_name {
+    margin: 0px 7px;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#book .center .block .author,
+#book .center .block .free,
+#movie .center .block .score {
+    width: 134px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#music .center .block .score img,
+#movie .center .block .score img {
+    width: 55px;
+    height: 12px;
+    display: inline;
+    vertical-align: top;
+}
+
+#book .center .block .free p,
+#book .center .block .author p {
+    text-align: center;
+}
+
+#music .center .block .score p,
+#movie .center .block .score p {
+    font-size: 2px;
+    display: inline;
+}
+
+#book .center .block button,
+#movie .center .block button {
+    margin: 0px 26px;
+    width: 80px;
+    line-height: 30px;
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+#movie .center .block button {
+    background: #1c8bd0;
+}
+
+#book .center .block button {
+    background: #999a95;
+}
+
+#movie .right {
+    width: 250px;
+    float: right;
+}
+
+#movie .right .species {
+    clear: both;
+    float: left;
+    width: 240px;
+    padding-bottom: 30px;
+}
+
+#movie .right .heading {
+    width: 240px;
+    margin-bottom: 16px;
+}
+
+#movie .right .block {
+    float: left;
+    width: 60px;
+}
+
+#movie .right .recentHot ol li {
+    list-style-position:inside;
+    list-style-type:decimal;
+    font-size: 2px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 6px 0px;
+}
+
+/*
+小组
+*/
+#group {
+    overflow: hidden;
+}
+
+#group .center {
+    width: 560px;
+}
+
+#group .center img {
+    height: 48px;
+    width: 48px;
+    vertical-align: top;
+}
+
+#group .center .block {
+    width: 280px;
+    height: fit-content;
+    float: left;
+    margin-bottom: 35px;
+}
+
+#group .center .block .pic,
+#group .center .block .group_info {
+    float: left;
+}
+
+#group .center .block .pic {
+    margin-right: 16px;
+}
+
+#group .center .block .group_info {
+    width: 180px;
+}
+
+
+#group .right,
+#group .right .heading,
+#group .species {
+    width: 270px;
+    float: left;
+}
+
+#group .right .heading {
+    margin-bottom: 10px;
+}
+
+#group .species ul {
+    margin-bottom: 5px;
+}
+
+#group .species ul a {
+    display: block;
+}
+
+#group .species li {
+    list-style: none;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+#group .species .aKind {
+    display: block;
+    width: 270px;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+#group .right .block {
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/*
+读书
+*/
+#book .right {
+    width: 270px;
+    float: right;
+}
+
+#book .right .heading {
+    width: 270px;
+}
+
+#book .right .aKind {
+    clear: both;
+    float: left;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+#book .right .aKind p {
+    font-size: 1px;
+}
+
+#book .right li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+}
+
+#book .douban_icon {
+    margin-top: 30px;
+}
+
+/*
+音乐
+*/
+
+
+#music .center {
+    width: 528px;
+    overflow: hidden;
+}
+
+#music .center .heading {
+    width: 528px;
+    margin-bottom: 20px;
+}
+
+#music .center .block {
+    float: left;
+    width: 132px;
+}
+
+#music .center .block img {
+    vertical-align: top;
+    height: 80px;
+    width: 80px;
+    margin: 0px 21px 10px 21px;
+}
+
+#music .center .name {
+    display: block;
+    width: 132px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#music .center .score {
+    float: left;
+    display: block;
+    width: 132px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+#music .center .list_row {
+    float: left;
+    height: fit-content;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#music .right .heading,
+#music .right {
+    width: 265px;
+}
+
+#music .right{
+    float: right;
+}
+
+#music .douban_icon {
+    margin-top: 20px;
+}
+
+#music .right ol .info {
+    float: right;
+}
+
+#music .right ol .info a {
+    display: block;
+    width: fit-content;
+    margin: 10px 0;
+}
+
+#music .right ol .info p {
+    margin: 5px 0;
+    color: #999999;
+}
+
+#music .right li {
+    display: block;
+    padding-left: 20px;
+}
+
+#music .right ol li div {
+    float: left;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+/*
+豆品
+*/
+#doupin .center .heading,
+#doupin .center {
+    width: 520px;
+}
+
+#doupin .center .list_row {
+    float: left;
+    width: 520px;
+    margin-bottom: 30px;
+}
+
+#doupin .center .block {
+    width: 240px;
+    margin-right: 20px;
+    float: left;
+}
+
+#doupin .center .block img {
+    height: 220px;
+    width: 240px;
+}
+
+#doupin .center .block a,
+#doupin .center .block p {
+    display: inline;
+}
+
+#doupin .center .block a {
+    float: left;
+}
+
+#doupin .center .block p {
+    float: right;
+    color: red;
+}
+
+#doupin .right {
+    width: 265px;
+    float: right;
+}
+
+#doupin .right .mark {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/*
+同城
+*/
+
+#location .center {
+    width: 540px;
+}
+
+#location .center .list img {
+    vertical-align: top;
+    width: 50px;
+    height: 70px;
+    margin-right: 10px;
+    float: left;
+}
+
+#location .center .info {
+    float: left;
+}
+
+#location .center .info {
+    width: 155px;
+}
+
+#location .center .info p {
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+#location .center .block {
+    float: left;
+    margin-bottom: 30px;
+    width: 270px;
+}
+
+#location .center .list_row {
+    float: left;
+    width: 540px;
+}
+
+#location .right,
+#location .right .heading,
+#location .species {
+    width: 270px;
+    float: left;
+}
+
+#location .species ul {
+    margin-bottom: 5px;
+}
+
+#location .species ul a {
+    display: block;
+}
+
+#location .species li {
+    list-style: none;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+#location .right .block {
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/*
+底部信息
+*/
+#informatino .content {
+    border-top: 1px dotted #dcdcdc;
+}
+
+#information .left {
+    width: fit-content;
+}
+
+#information .left p {
+    color: #999999;
+}
+
+#information .left a {
+    color: #3377bd;
+}
+
+#information .left .jubao {
+    width: 117px;
+    height: 16px;
+}
+
+#information .left .icon {
+    height: 12px;
+    width: 15px;
+}
+
+#information .right {
+    float: right;
+}
+
+#information .right li{
+    float: left;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+#information .right .mark {
+    margin-right: 0px;
+}
+
+#information .right img {
+    margin-top: 35px;
+}
+
+/*
+公共部分
+*/
+.heading {
+    float: left;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.heading strong {
+    font-size: 2px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    color: #007722;
+    line-height: 2px;
+}
+
+.heading a {
+    text-decoration: none;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    font-weight: normal;
+    color: #3377aa;
+}
+
+.heading a:hover {
+    background: #3377aa;
+    color: #ffffff;
+}
+
+#location .left h2 a,
+#doupin .left h2 a,
+#music .left h2 a,
+#book .left h2 a,
+#group .left h2 a,
+#movie .title h2 a,
+#video .title h2 a,
+#login .download_block h2 a,
+#time .title h2 a{
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 120px;
+}
+
+.content {
+    width: 950px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+#location .left,
+#music .left,
+#book .left,
+#movie .title,
+#video .title,
+#time .title {
+    width: 100px;
+    float: left;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+p,
+a {
+    text-decoration: none;
+    font-size: 2px;
+    font-family: 微软雅黑;
+}
+
+a {
+    color: #3377bd;
+}
+
+a:hover {
+    color: #ffffff;
+    background: #3377aa;
+}
+
+#doupin .left,
+#group .left,
+#movie .title {
+    float: left;
+    width: 120px;
+}
+
+#group .content li,
+#movie .content li {
+    list-style: none;
+}
+
+.left,
+.center {
+    float: left;
+}
+
+#group .center .heading,
+#movie .center .heading {
+    width: 536px;
+    margin-bottom: 16px;
+}
+
+#location .left li,
+#book .left li,
+#movie .title li,
+#group .left li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+#music .left a,
+#book .left a,
+#video .title a,
+#time .title a{
+    color: black;
+}
+
+#group .left a {
+    color: #007722;
+}
+
+#music .left h2 a {
+    color: #f8ab00;
+}
+
+#location .left h2 a {
+    color: #ec5303;
+}
+
+#information .left a:hover,
+#location .left a:hover,
+#doupin .left a:hover,
+#music .left a:hover,
+#book .left a:hover,
+#group .left a:hover,
+#movie .title a:hover,
+#video .title a:hover,
+#login .download_block a:hover,
+#time .title a:hover {
+    color: #ffffff;
+}
+
+.douban_icon img {
+    width: 52px;
+    height: 52px;
+    padding-right: 50px;
+    vertical-align: top;
+}
+
+.douban_icon a {
+    color: black;
+}
+
+.douban_icon .mark:hover {
+    background: none;
+}
