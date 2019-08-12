@@ -1,0 +1,1 @@
+document.getElementById('name').innerHTML="file of entry2,success or not?";
