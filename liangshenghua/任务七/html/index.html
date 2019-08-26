@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>任务七</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="web">
+    <div class="content">
+
+        
+        <div class="body-div" id="body-div">
+            <p class="header">登录</p>
+
+        
+        <form method="POST" action="" id="form_1">
+        <div class="form">
+            <div class="user-div">
+                <i></i>
+                 <input class="user" id="mail1" type="text" placeholder="请输入登录账号">
+            </div>
+           <div class="password-div">
+               <i></i>
+               
+               <input class="password" id="password1" type="password" placeholder="请输入密码">
+            </div>
+        </div>
+        <div style="width: 210px; margin-left: 39px;">
+            <p id="sign-in"><a href="javascript:onclick1()" >注册</a></p>
+        <p class="forget-password">请先注册再登录</p>
+        </div>
+        
+        
+            <button type="button" onclick="button1()">登录</button>
+        </form>
+        </div>
+        <div class="body-sign" id="body-sign">
+                <p class="header">注册</p>
+
+        
+                <form method="POST" action="" id="form_2">
+                <div class="form">
+                    <div class="user-div">
+                        <i></i>
+                        <input type="text" class="user" id="name" placeholder="请输入用户名">
+                         <input style="margin-left: 33px;" class="user" id="mail2" type="text" placeholder="请输入注册邮箱账号">
+                    </div>
+                   <div class="password-div">
+                       <i></i>
+                       
+                       <input class="password" id="password2" type="password" placeholder="请输入注册密码">
+                       <input style="margin-left: 33px;" id="password4" class="password" type="password" placeholder="请再次输入注册密码">
+                    </div>
+                </div>
+                <div style="width: 210px; margin-left: 39px;">
+                        <a id="return" href="javascript:onclick2()" >返回登陆页面</a>
+                <p class="forget-password">注册成功自动跳转页面</p>
+                </div>
+                
+                    <button type="button" onclick="button2()" >注册</button>
+                </form>
+        </div>
+    </div>
+    </div>
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script>
+         function onclick1(){
+            
+                document.getElementById('body-div').style.display= 'none';
+                document.getElementById('body-sign').style.display= 'block';
+                
+                
+            };
+       function onclick2(){
+                document.getElementById('body-sign').style.display= 'none';
+                document.getElementById('body-div').style.display= 'block';
+               
+       }
+       function checkMail(){
+           
+       
+　　
+        var reg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+var obj = document.getElementById("mail1"); 
+if (obj.value.length==0){
+    var obj = document.getElementById("mail2"); 
+}
+　　if(obj.value === ""){ //输入不能为空
+　　　　alert("输入不能为空!");
+　　　　return false;
+　　}else if(!reg.test(obj.value)){ //正则验证不通过，格式不对
+　　　　alert("邮箱验证不通过");
+　　　　return false;
+　　}else{
+　　　
+　　　　return true;
+　　}
+           
+
+       }
+       function checkNull1(){
+           var passcheck = document.getElementById("password1");
+           
+               
+           
+           
+           if(passcheck.value === ""){
+               alert("请输入密码");
+               return false;
+           }
+           else{return true;}
+       }
+       function checkNull2(){
+          
+               var passcheck = document.getElementById("password2");
+           
+           
+           if(passcheck.value === ""){
+               alert("请输入密码");
+               return false;
+           }
+           else{return true;}
+       }
+
+       function checkPasswork(){
+           var password_1 = document.getElementById("password2");
+           var password_2 = document.getElementById("password4");
+           if(password_1.value == password_2.value){
+           
+               return true;
+           }
+           else{
+            alert("两次输入的密码不一致")
+            return false;
+           }
+
+       }
+       function clearForm(){
+        var objId1 = document.getElementById("form_1");
+if (objId1 == undefined) {
+return;
+}
+for (var i = 0; i < objId1.elements.length; i++) {
+if (objId1.elements[i].type == "text") {
+objId1.elements[i].value = "";
+}
+else if (objId1.elements[i].type == "password") {
+objId1.elements[i].value = "";
+}
+
+}
+var objId = document.getElementById("form_2");
+if (objId == undefined) {
+return;
+}
+for (var i = 0; i < objId.elements.length; i++) {
+if (objId.elements[i].type == "text") {
+objId.elements[i].value = "";
+}
+else if (objId.elements[i].type == "password") {
+objId.elements[i].value = "";
+}
+
+}
+
+
+}
+
+function signin() {
+   
+        var username = $.trim($('#name').val());
+        var usermail = $.trim($('#mail2').val());
+        var userpsw = $.trim($('#password4').val());
+        if(usermail=='' || userpsw==''){
+           
+        }else{
+            $.ajax({
+                url:'/api/register',
+                method:'post',
+                data:{usermail:usermail,userpsw:userpsw,username:username},
+                success:(res)=>{
+                    alert(res.meg+'请登录');
+                
+                },
+                error:(err)=>{
+                    console.log(err);
+                    alert("出错");
+                }
+            })
+        }
+    return true;
+    };
+
+       
+
+
+function signup() {
+    
+        var usermail1 = $.trim($('#mail1').val());
+        var userpsw1 = $.trim($('#password1').val());
+        
+        if (usermail1 == '' || userpsw1 == '') {
+           
+        } else {
+            $.ajax({
+                url: '/api/login',
+                method: 'post',
+                data: {usermail: usermail1, userpsw: userpsw1},
+                success: (res)=> {
+                    console.log(res.data);
+                    if (res.data) {
+                       alert('登陆成功');
+                    } else {
+                        if (res.meg == '密码错误') {
+                            alert('密码错误,请重新登录！')
+                        } else {
+                            alert('用户不存在，请注册！！');
+                           
+                        }
+                    }
+
+                },
+                error: (err)=> {
+                    console.log(err);
+                }
+            })
+        }
+    };
+
+function button2(){
+    if(checkNull2()){
+        if(checkMail()){
+            if(checkPasswork()){
+                if(signin()){
+                    console.log('1231');
+                    onclick2()
+                }
+                
+            }
+            else{alert("注册失败")};
+        }
+        else{alert("注册失败")};
+    }
+    else{
+    return(alert("注册失败"))
+    }
+
+    
+}
+function button1(){
+    if(checkNull1()){
+        if(checkMail()){
+            signup()
+            console.log('OK');
+        }
+        else{alert("登录失败")}
+    }
+    else{alert("登录失败")}
+}
+
+    </script>
+</body>
+</html>
