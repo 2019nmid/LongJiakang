@@ -1,0 +1,28 @@
+* { padding: 0; margin: 0; font-family: Arial; outline: none; }
+li { list-style: none; }
+img { border: none; }
+a { text-decoration: none; cursor: pointer; }
+
+#login { height: 500px; width: 300px; position: absolute; top: 100px; left: 50%; margin-left: -150px; background-color: lightskyblue; display: block; }
+#login .login_btn1, #login .login_btn2 { height: 50px; width: 150px; background-color: lightskyblue; border: none; cursor: pointer; float: left; font-size: 20px; }
+#login .login_btn1 { border-bottom: 1px solid black; }
+#login .login_btn2 { color: rgb(81, 186, 252); }
+.login_text1, .login_text2 { height: 30px; width: 240px; padding-left: 10px; margin: 30px 0 0 25px; background-color: rgb(83, 186, 250); border: none; border-radius: 8px; font-size: 12px; } 
+.login_p1 { font-size: 15px; position: absolute; top: 60px; left: 25px; }
+.login_p2 { font-size: 15px; position: absolute; top: 120px; left: 25px; }
+.login_btn3 { position: absolute; top: 320px; left: 25px; height: 30px; width: 250px; background-color: rgb(20, 131, 201); border: none; border-radius: 8px; cursor: pointer; }
+.login_a { display: block; width: 100px; height: 30px; position: absolute; top: 380px; left: 50%; margin-left: -40px; color: rgb(26, 121, 180); }
+.login_a span:hover { background-color: rgb(26, 121, 180); color: lightskyblue; }
+
+#regiter { height: 500px; width: 300px; position: absolute; top: 100px; left: 50%; margin-left: -150px; background-color: lightskyblue; display: none; }
+#regiter .regiter_btn1, #regiter .regiter_btn2 { height: 50px; width: 150px; background-color: lightskyblue; border: none; cursor: pointer; float: left; font-size: 20px; }
+#regiter .regiter_btn2 { border-bottom: 1px solid black; }
+#regiter .regiter_btn1 { color: rgb(81, 186, 252); }
+.regiter_text1, .regiter_text2, .regiter_text3, .regiter_text4 { height: 30px; width: 240px; padding-left: 10px; margin: 30px 0 0 25px; background-color: rgb(83, 186, 250); border: none; border-radius: 8px; font-size: 12px; } 
+.regiter_p1 { font-size: 15px; position: absolute; top: 60px; left: 25px; }
+.regiter_p2 { font-size: 15px; position: absolute; top: 120px; left: 25px; }
+.regiter_p3 { font-size: 15px; position: absolute; top: 180px; left: 25px; }
+.regiter_p4 { font-size: 15px; position: absolute; top: 240px; left: 25px; }
+.regiter_btn3 { position: absolute; top: 320px; left: 25px; height: 30px; width: 250px; background-color: rgb(20, 131, 201); border: none; border-radius: 8px; cursor: pointer; }
+.regiter_a { display: block; width: 100px; height: 30px; position: absolute; top: 380px; left: 50%; margin-left: -40px; color: rgb(26, 121, 180); }
+.regiter_a span:hover { background-color: rgb(26, 121, 180); color: lightskyblue; }
