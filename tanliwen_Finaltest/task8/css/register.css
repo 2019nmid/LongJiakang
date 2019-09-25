@@ -1,0 +1,441 @@
+* { padding: 0; margin: 0; font-family: Arial; outline: none; }
+li { list-style: none; }
+img { border: none; }
+a { text-decoration: none; cursor: pointer; }
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#img{
+    float: left;
+    height: 100%;
+    width: 400px;  
+}
+#img img{
+    height: 100%;
+    width: 100%;
+}
+#register{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 400px;
+}
+#register h1{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #000000;
+}
+.register_p{
+    position: absolute;
+    left: 0px;
+    top: 130px;
+    font-size: 22px;
+    color: #000;
+}
+.register_a{
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    font-size: 22px;
+    color: #5ca6ff;     
+}
+.register_a:hover{
+    color: #2d88dd;
+}
+.register_body{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 590px;
+}
+.register_body_text1, .register_body_text2{
+    height: 40px;
+    width: 398px;
+    border: 1px solid #aaaaaa;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.register_wraning1, .register_wraning2{
+    color: red;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 8px;
+    background: url(../img/register/wraning_img1.png) no-repeat left;
+    display: none;
+}
+.register_suggest1, .register_suggest2, .register_suggest3, .register_suggest0{
+    color: #000;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 8px;
+    background: url(../img/register/suggest_img1.png) no-repeat left;
+    display: none;
+}
+.register_body_text3, .register_body_text5{
+    height: 40px;
+    width: 130px;
+    border: 1px solid #aaaaaa;
+    font-size: 14px;
+    color: #000;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.register_div7{
+    position: absolute;
+    top: 58px;
+    left: 110px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  #aaaaaa transparent transparent transparent;
+    cursor: pointer;
+}
+.register_div8{
+    position: absolute;
+    top: 55px;
+    left: 110px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  transparent transparent #aaaaaa transparent;
+    display: none;
+    cursor: pointer;
+
+}
+.register_body_text4{
+    height: 40px;
+    width: 231px;
+    border: 1px solid #aaaaaa;
+    font-size: 14px;
+    color: #000;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.register_body_p{
+    color: #999999;
+    font-size: 12px;
+}
+.register_body_text5{
+    margin-top: 28px;
+}
+.register_body_btn1{
+    width: 233px;
+    height: 40px;
+    background-color: #337eeb;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.register_num{
+    display: none;
+}
+.register_body_btn1:hover{
+    background-color: #3177e0;
+}
+.register_body_btn2{
+    width: 100%;
+    height: 50px;
+    background-color: #337eeb;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.register_body_btn2:hover{
+    background-color: #3177e0;
+}
+.register_body_foot{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+}
+.register_div3{
+    position: absolute;
+    top: 5px;
+    left: 232px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  #aaaaaa transparent transparent transparent;
+    cursor: pointer;
+}
+.register_div4{
+    position: absolute;
+    top: 0px;
+    left: 232px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  transparent transparent #aaaaaa transparent;
+    display: none;
+    cursor: pointer;
+
+}
+.register_body_foot label{
+    position: absolute;
+    top: -1px;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.register_body_foot_a1, .register_body_foot_a2, .register_body_foot_a3{
+    font-size: 12px;
+    color: #359eff;
+    display: none;
+}
+.register_body_foot_a1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.register_body_foot_a2{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.register_body_foot_a3{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+.register_body_foot a:hover{
+    color: #2b72ff;
+}
+.register_body_foot_p{
+    font-size: 12px;
+    color: #bbbbbb;
+    text-align: center;
+    margin-top: 80px;
+}
+.register_body_p{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+.register_country{
+    position: absolute;
+    top: 82px;
+    border: 1px solid #000;
+    width: 400px;
+    height: 160px; 
+    background-color: #ffffff;
+    display: none;
+    overflow-y: scroll;
+}
+.register_ul{
+    position: relative;
+    width: 380px;
+    height: 100%;
+}
+.register_ul li{
+    padding-bottom: 7px;
+    width: 380px;
+    height: 20px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.register_li_p1{
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+.register_li_p2{
+    font-size: 15px;
+    color: #000;
+    position: absolute;
+    top: 2px;
+    left: 120px;
+}
+.register_silp{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 160px;
+    background-color: #eeeded;
+}
+#register_div5{
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #dfdede;
+    cursor: pointer;
+}
+#register_div6{
+    position: absolute;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #dfdede;
+    cursor: pointer;
+}
+.register_div5{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  #aaaaaa transparent transparent transparent;
+}
+.register_div6{
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  transparent transparent #aaaaaa transparent;
+}
+#silp{
+    position: absolute;
+    top: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: #8a8989;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.register_head_a{
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-size: 13px;
+    color: #666666;
+}
+.register_head_a:hover{
+    color: #000000;
+}
+.language{
+    position: absolute;
+    top: 40px;
+    right: 130px;
+    font-size: 13px;
+    color: #666666;
+}
+.register_div1{
+    position: absolute;
+    right: 115px;
+    top: 47px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  #666666 transparent transparent transparent;
+}
+.register_div2{
+    position: absolute;
+    right: 115px;
+    top: 42px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    border-color:  transparent transparent #666666 transparent;
+    display: none;
+}
+.register_qq{
+    position: absolute;
+    right: 210px;
+    top: 27px;
+}
+.language_div{
+    position: absolute;
+    right: 130px;
+    top: 55px;
+    display: none;
+}
+.language_div p{
+    margin-top: 12px;
+    color: #666666;
+    font-size: 13px;
+}
+.register_qq_div{
+    position: absolute;
+    right: 214px;
+    top: 62px;
+    width: 290px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #666666;
+    display: none;
+    background-color: #ffffff;
+}
+.register_qq_div .text{
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    width: 250px;
+    border: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #666666;
+}
+.register_qq_div .btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 42px;
+    width: 38px;
+    background: url(../img/register/search_img1.png) center no-repeat;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+.register_qq_a1{
+    position: absolute;
+    left: 70px;
+    bottom: 20px;
+    font-size: 13px;
+    color: #359eff;
+}
+.register_qq_a2{
+    position: absolute;
+    left: 110px;
+    bottom: 20px;
+    font-size: 13px;
+    color: #359eff;
+}
+.register_qq_a3{
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+    font-size: 13px;
+    color: #359eff;
+}
+.register_qq_a4{
+    position: absolute;
+    left: 190px;
+    bottom: 20px;
+    font-size: 13px;
+    color: #359eff;
+}
+.register_qq_div a:hover{
+    color: #2d88dd;
+}
